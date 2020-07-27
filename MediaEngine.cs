@@ -8,8 +8,15 @@ using System.Windows.Media;
 
 namespace Player
 {
+    /// <summary>
+    /// Реализация медиа-движка на основе WPF MediaElement.
+    /// </summary>
     class MediaEngine : IMediaEngine
     {
+        // инкапсулирует MediaElement
+        // дает возможность управлять воспроизведением из разных потоков
+        
+        
         private MediaElement player;
 
         public MediaEngine(MediaElement player)
